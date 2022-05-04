@@ -38,9 +38,16 @@ watch:  ## Build App for Dev Env
 	@$(call logText) && echo "*** Building App for Dev ***" && $(call reset_colors)
 	yarn quasar dev
 
+watchBex:  ## Build App for BEX Mode
+	@$(call logText) && echo "*** Building App for BEX ***" && $(call reset_colors)
+	yarn quasar dev -m bex
 
 ################## Recipes explicitly for Production ####################
 
-prod:	## Build for Production environment
+prod:	## Build App for Production environment
 	@$(call logText) && echo "*** Building App for Production ***" && $(call reset_colors)
 	yarn quasar build
+
+prodBex:	## Build BEX for Production environment
+	@$(call logText) && echo "*** Building BEX for Production ***" && $(call reset_colors)
+	yarn quasar build -m bex
