@@ -1,6 +1,6 @@
 {
-  "name": "quasar-browser-extension",
-  "description": "A Quasar web extension",
+  "name": "Env-Switcher",
+  "description": "An extension to quickly switch between multiple environments",
   "version": "1.0.0",
   "manifest_version": 2,
   "icons": {
@@ -9,7 +9,8 @@
     "128": "icons/icon-128x128.png"
   },
   "browser_action": {
-    "default_title": "quasar-browser-extension"
+    "default_title": "quasar-browser-extension",
+    "default_popup": "www/index.html#/popup"
   },
   "background": {
     "scripts": [
@@ -28,6 +29,7 @@
       "css/content-css.css"
     ]
   }],
+  "options_page": "www/index.html#/options",
   "permissions": [
     "<all_urls>",
     "storage",
