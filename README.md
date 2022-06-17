@@ -1,6 +1,6 @@
-# Env-switcher
+# Env-switcher (Environment Switcher)
 
-Environment Switcher for your Coding needs
+Environment Switcher for your Testing needs
 
 ## Install the dependencies
 ```bash
@@ -36,4 +36,4 @@ make prod
 ```
 
 ### Customize the configuration
-See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-webpack/quasar-config-js).
+See [Configuring quasar.config.js](https://v2.quasar.dev/quasar-cli-vite/quasar-config-js).
