@@ -1,4 +1,3 @@
-
 module.exports = {
   // https://eslint.org/docs/user-guide/configuring#configuration-cascading-and-hierarchy
   // This option interrupts the configuration hierarchy at this file
@@ -16,7 +15,8 @@ module.exports = {
   env: {
     browser: true,
     es2021: true,
-    node: true
+    node: true,
+    'vue/setup-compiler-macros': true
   },
 
   // Rules order is important, please avoid shuffling them
@@ -64,10 +64,7 @@ module.exports = {
     __QUASAR_SSR_PWA__: 'readonly',
     process: 'readonly',
     Capacitor: 'readonly',
-    chrome: 'readonly',
-    defineProps: 'readonly', // Vue SFC setup compiler macro
-    defineEmits: 'readonly', // Vue SFC setup compiler macro
-    defineExpose: 'readonly' // Vue SFC setup compiler macro
+    chrome: 'readonly'
   },
 
   // add your custom rules here
@@ -83,7 +80,7 @@ module.exports = {
     // in plain CommonJS modules, you can't use `import foo = require('foo')` to pass this rule, so it has to be disabled
     '@typescript-eslint/no-var-requires': 'off',
 
-    // The core 'no-unused-vars' rules (in the eslint:recommeded ruleset)
+    // The core 'no-unused-vars' rules (in the eslint:recommended ruleset)
     // does not work with type definitions
     'no-unused-vars': 'off',
 
